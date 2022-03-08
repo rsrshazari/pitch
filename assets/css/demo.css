@@ -1,0 +1,388 @@
+/*
+* demo.css
+* File include item demo only specific css only
+******************************************************************************/
+
+.menu .app-brand.demo {
+  height: 64px;
+  margin-top: 12px;
+}
+
+.app-brand-logo.demo svg {
+  width: 22px;
+  height: 38px;
+}
+
+.app-brand-text.demo {
+  font-size: 1.75rem;
+  letter-spacing: -0.5px;
+  text-transform: lowercase;
+}
+
+
+.btn .add-new-role:hover{
+  color: #fff;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+/* Detached navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
+  padding-top: 76px !important;
+}
+/* Default navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 64px !important;
+}
+
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+  z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+  display: block !important;
+}
+
+.demo-inline-spacing > * {
+  margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+  margin-top: 1.875rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+  margin-top: 5rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.rtl-only {
+  display: none !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+[dir='rtl'] .rtl-only {
+  display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.layout-demo-placeholder img {
+  width: 900px;
+}
+.layout-demo-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+
+/* persentation css start */
+
+.start-presentation-image img {
+  border-radius: 0.5rem;
+}
+#presentationImage img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.recentUse img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+#temporary{
+  background:none;
+  border-radius: 5px;
+  border: 1px solid #566a7f;
+  padding: 10px 15px;
+  color: #566a7f;
+}
+.presentation-heading {
+  /* background: orange; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.presentation-heading h5 {
+  margin-bottom: 0px;
+}
+#temporary h6 {
+  margin-bottom: 0px;
+}
+#personal {
+  display: none;
+}
+.card-header {
+  padding: 1rem 1rem 0.5rem 1rem!important;
+}
+#cards img{
+  border-bottom-left-radius: 0rem!important;
+  border-bottom-right-radius: 0rem!important;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+#workspaceImage img {
+  width: 100px;
+  border-radius: 50%;
+} 
+#workspace-align-middle .btn{
+  padding-left: 0rem!important;
+  padding-right:0rem!important;
+  color: #fff;
+  width: 200px;
+}
+
+.profile-images-card{
+  margin: auto;
+  display: table;
+  background: #fff;
+  padding: 30px 50px;
+  box-shadow: 0px 0px 5px #ddd;
+}
+.profile-images{
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.custom-file  input [type='file']{
+  display: none;
+}
+.custom-file label{
+  cursor: pointer;
+  color: #000;
+  text-align: center;
+  display: table;
+  margin: auto;
+  margin-top: 15px;  
+}
+.workspace-pop {
+  display: flex ;
+}
+
+
+.button-wrapper .text-muted{
+  font-size: 12px;
+}
+
+.addUser-button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+#addworkspace{
+  display: flex;
+  /* background: red; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#addworkspace h5{
+  margin-bottom: 0px!important;
+}
+/* persentation css end */
+/* 
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.4375rem 0.875rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.53;
+  color: #697a8d;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d9dee3;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}*/
+
+
+
+#example_wrapper #example_length{
+  float: left;
+  margin-bottom: 10px;
+}
+
+#example_wrapper #example_filter{
+  float: right;
+}
+
+
+div.dataTables_wrapper div.dataTables_length label{
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+}
+label {
+  display: inline-block;
+}
+div.dataTables_wrapper div.dataTables_length select{
+  width: auto;
+  display: inline-block;
+}
+.form-select{
+  background-clip: padding-box;
+}
+
+#example_filter input{
+    /* background: orange; */
+    display: inline-block;
+    width: auto;
+    padding: 0.4375rem 0.875rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.53;
+    color: #697a8d;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d9dee3;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    outline: none;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#example_filter input:focus{
+  border-color: blue;
+}
+
+
+
+
+.dataTables_length select{
+    display: inline-block;
+    /* width: auto; */
+    padding: 0.4375rem 1.875rem 0.4375rem 0.875rem;
+    -moz-padding-start: calc(0.875rem - 3px);
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.53;
+    color: #697a8d;
+    background-color: #fff;
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%2867, 89, 113, 0.6%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e);
+    background-repeat: no-repeat;
+    background-position: right 0.875rem center;
+    background-size: 17px 12px;
+    border: 1px solid #d9dee3;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline:none;
+    /* float:left; */
+}
+.dataTables_length select:hover{
+  border-color: blue;
+}
+
+.page-item.active .page-link, .page-item.active .page-link:hover{
+  border-color: #696cff;
+  background-color: #696cff;
+}
+
+#example_info{
+    float: left;
+}
+
+div.dataTables_wrapper div.dataTables_paginate{
+  margin:20px!important;
+}
+
+.dataTables_paginate span{
+   background:  #696cff;
+   color: #fff;
+   box-shadow: 0 0.125rem 0.25rem rgb(105 108 255 / 40%); 
+   padding: 10px 15px;
+   border-radius: 0.375rem;
+   margin: 0px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
